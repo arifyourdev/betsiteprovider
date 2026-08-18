@@ -1,0 +1,104 @@
+Options -MultiViews
+RewriteEngine On
+# Extra Security Headers
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+	Header always append X-Frame-Options SAMEORIGIN
+	Header set Referrer-Policy "no-referrer-when-downgrade"
+	Header set Feature-Policy "geolocation 'self'; vibrate 'none'"
+</IfModule>
+<ifModule mod_headers.c>
+Header set Connection keep-alive
+</ifModule>
+## GZIP / BROTLI COMPRESSION ##
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+AddOutputFilterByType DEFLATE image/svg+xml font/ttf font/otf application/font-woff application/vnd.ms-fontobject
+</IfModule>
+<IfModule mod_brotli.c>
+AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript
+AddOutputFilterByType BROTLI_COMPRESS application/javascript application/x-javascript
+</IfModule>
+## GZIP / BROTLI COMPRESSION ##
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType image/webp "access 1 year"
+ExpiresByType image/svg+xml "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType font/ttf "access 1 year"
+ExpiresByType font/otf "access 1 year"
+ExpiresByType font/woff "access 1 year"
+ExpiresByType font/woff2 "access 1 year"
+ExpiresByType application/font-woff "access 1 year"
+ExpiresByType application/vnd.ms-fontobject "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/javascript "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType text/html "access 1 hour"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresDefault "access 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+<FilesMatch "\.(css|js|png|jpe?g|webp|gif|svg|ico|woff2?|ttf|otf)$">
+Header set Cache-Control "public, max-age=2592000"
+</FilesMatch>
+</IfModule>
+## EXPIRES CACHING ##
+
+# Specific rewrite rules first
+RewriteRule ^b2c-betting-platform$ B2C.php [L]
+RewriteRule ^b2b-betting-platform$ B2B.php [L]
+
+# Return 404 if original request is .php And .html
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.html[? ].*$"
+RewriteRule .* - [L,R=404]
+ErrorDocument 404 /404
+ErrorDocument 500 /404
+RewriteRule ^sitemap.xml sitemap.php
+RewriteRule ^white-label-betting-websites  products.php [NC,L]
+RewriteRule ^sportsbook-software-company  about.php [NC,L]
+RewriteRule ^betting-payment-gateway-bangladesh  payment-methods.php [NC,L]
+RewriteRule ^white-label-betting-sites  services.php [NC,L]
+RewriteRule ^betting-insights  blogs.php [NC,L]
+RewriteRule ^blog/([A-Za-z0-9-]+)  single-blog.php?title_url=$1 [NC,L]
+RewriteRule ^product/([A-Za-z0-9-]+)  product-details.php?title_url=$1 [NC,L]
+RewriteRule ^admin/edit_blog/([A-Za-z0-9-]+)  admin/edit_blog.php?id=$1 [NC,L]
+RewriteRule ^admin/edit_product/([A-Za-z0-9-]+)  admin/edit_product.php?id=$1 [NC,L]
+RewriteRule ^admin/update_image/([A-Za-z0-9-]+)  admin/update_image.php?id=$1 [NC,L]
+RewriteRule ^admin/view_inquiry/([A-Za-z0-9-]+)  admin/view_inquiry.php?id=$1 [NC,L]
+RewriteRule ^admin/update_socials/([A-Za-z0-9-]+)  admin/update_social_list.php?id=$1 [NC,L]
+RewriteRule ^admin/blog/([A-Za-z0-9-]+)  admin/blog.php?language=$1 [NC,L]
+RewriteRule ^admin/about/([A-Za-z0-9-]+)  admin/about.php?language=$1 [NC,L]
+RewriteRule ^admin/home/([A-Za-z0-9-]+)  admin/home.php?language=$1 [NC,L]
+RewriteRule ^admin/payment_method/([A-Za-z0-9-]+)  admin/payment_method.php?language=$1 [NC,L]
+RewriteRule ^admin/banners/([A-Za-z0-9-]+)  admin/banners.php?language=$1 [NC,L]
+RewriteRule ^admin/add-banner/([A-Za-z0-9-]+)  admin/add-banner.php?language=$1 [NC,L]
+RewriteRule ^admin/edit_banner/([A-Za-z0-9-]+)  admin/edit_banner.php?id=$1 [NC,L]
+RewriteRule ^admin/footer_list/([A-Za-z0-9-]+)  admin/footer_list.php?language=$1 [NC,L]
+RewriteRule ^admin/products/([A-Za-z0-9-]+)  admin/products.php?language=$1 [NC,L]
+RewriteRule ^admin/add_product/([A-Za-z0-9-]+)  admin/add_product.php?language=$1 [NC,L]
+
+# Generic fallbacks LAST: these must run only after all specific routes above
+# have had a chance to match. Placing them earlier caused an infinite
+# mod_rewrite loop (AH00124) on any admin/<page>/<segment> URL, because
+# REQUEST_FILENAME.php -f spuriously matches admin/<page>.php via PATH_INFO
+# for URIs like admin/blog/English, appending .php on every pass.
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]

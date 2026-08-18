@@ -1,0 +1,3086 @@
+@media screen and (max-width: 1600px) {
+    .main-box {
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+    .main-box {
+        padding-left: 1% !important;
+        padding-right: 1% !important;
+    }
+
+    /* font sizes */
+    h1,
+    .banner-con .banner-content-con h1 span {
+        font-size: 54px;
+        line-height: 63px;
+        margin-bottom: 12px;
+    }
+
+    h2,
+    .support-con .support-content-con h2 span {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .padding-top {
+        padding-top: 100px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 100px;
+    }
+
+    /* 404 page styling start here*/
+    .error-con h2 {
+        font-size: 120px;
+        line-height: 125px;
+        margin-bottom: 10px;
+    }
+
+    .error-con p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* BACK BTN CSS  */
+    #back-to-top-btn {
+        bottom: 92px;
+        right: 60px;
+        width: 75px;
+        height: 75px;
+    }
+
+    /* HEADER */
+    .header-con .container {
+        padding: 0;
+    }
+
+    .header-con {
+        padding: 18px 0;
+    }
+
+    .header-con .navbar {
+        left: 0;
+    }
+
+    /* 404 page styling start here*/
+    .error-con h2 {
+        font-size: 120px;
+        line-height: 125px;
+        margin-bottom: 10px;
+    }
+
+    .error-con p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .header-con .navbar-light .navbar-nav ul li:last-child .dropdown-menu {
+        left: -19px;
+    }
+
+    /* HOME PAGE MAIN BANNER SECTION */
+
+    .banner-outer-wrapper {
+        background-position: center;
+    }
+
+    .customers-reviews-con .owl-carousel .owl-nav button.owl-next,
+    .why-choose-us-con .owl-carousel .owl-nav button.owl-next {
+        right: -42px;
+    }
+
+    .customers-reviews-con .owl-carousel .owl-nav button.owl-prev,
+    .why-choose-us-con .owl-carousel .owl-nav button.owl-prev {
+        left: -42px;
+    }
+
+    .perfect-plans-con .owl-carousel .owl-nav button.owl-prev {
+        left: -42px;
+    }
+
+    .perfect-plans-con .owl-carousel .owl-nav button.owl-next {
+        right: -42px;
+    }
+
+    .perfect-plans-con .owl-carousel .owl-nav button {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+    }
+
+    /* special padding */
+    .padding-top-xl {
+        padding-top: 280px;
+    }
+
+    /* FOOTER SECTION */
+    .footer-con .middle-portion {
+        padding: 0 0 55px;
+    }
+
+    .cta-con .cta-content-con {
+        padding-right: 0;
+        padding-left: 50px;
+    }
+
+    .footer-con .copyright {
+        text-align: center;
+        padding: 17px 0;
+    }
+
+    .customers-reviews-con .white-box p {
+        margin-bottom: 28px;
+    }
+
+    .customers-reviews-con .owl-item,
+    .why-choose-us-con .owl-item {
+        padding: 40px 30px 40px;
+    }
+
+    .left-shape,
+    .right-shape {
+        width: 800px;
+    }
+
+    .heading-title-con h2 {
+        margin-bottom: 8px;
+    }
+
+    .featured-games-con .game-box .game-details {
+        left: 25px;
+        bottom: 25px;
+    }
+
+    /* BANNER SECTION */
+    .banner-con .banner-content-con .circle {
+        width: 510px;
+        height: 510px;
+        margin-left: 40px;
+    }
+
+    .banner-outer-wrapper .element2 {
+        left: 80px;
+        top: 170px;
+    }
+
+    .banner-outer-wrapper .element3 {
+        left: 65px;
+        bottom: 60px;
+    }
+
+    .banner-con ul.social-con {
+        left: -34px;
+        top: 35%;
+    }
+
+    .banner-outer-wrapper .element5 {
+        left: 110px;
+        top: 20px;
+        width: 100px;
+    }
+
+    .banner-outer-wrapper .element4 {
+        left: 43%;
+        bottom: 0;
+    }
+
+    .banner-con .banner-content-con h1 {
+        margin-bottom: 12px;
+    }
+
+    .faq-con .element {
+        display: none;
+    }
+
+    .footer-con .pattern {
+        height: 100%;
+    }
+
+    .support-con .support-img-con figure {
+        position: relative;
+        left: unset;
+    }
+
+    .support-con .support-img-con img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .support-con .element3 {
+        display: none;
+    }
+
+    .support-con .element10 {
+        top: 39px;
+        right: 41%;
+        width: 30px;
+    }
+
+    .support-con .element7 {
+        bottom: 100px;
+        right: 248px;
+        width: 18px;
+    }
+
+    .web-hosting-solutions-con::before {
+        background-position: center;
+    }
+
+    .featured-games-con .d-flex {
+        display: block !important;
+        text-align: center;
+    }
+
+    .featured-games-con .game-outer-box {
+        display: inline-block !important;
+        margin: 0 10px 20px;
+    }
+
+    .featured-games-con .game-outer-box .game-box {
+        text-align: left;
+    }
+
+    .performance-con .element3 {
+        display: none;
+    }
+
+    .performance-con .element12 {
+        top: 0;
+        right: 100px;
+    }
+
+    .performance-con .element10 {
+        top: 41px;
+        right: 35%;
+        width: 30px;
+    }
+
+    .performance-con .element11 {
+        top: 84px;
+        left: 22%;
+    }
+
+    /* HOME 02 PAGE */
+    .banner2-con h1 {
+        font-size: 65px;
+        line-height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content p {
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 27px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content p br {
+        display: none;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content {
+        padding: 0 20px;
+    }
+
+    .banner3-con .social-con {
+        top: unset;
+        left: 0;
+        bottom: -80px;
+    }
+
+    .banner3-con .social-con li {
+        display: inline-block;
+    }
+
+
+}
+
+@media screen and (max-width: 1199px) {
+    .padding-top {
+        padding-top: 80px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 80px;
+    }
+
+    /* font sizes */
+    h1,
+    .banner-con .banner-content-con h1 span {
+        font-size: 48px;
+        line-height: 57px;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    h2.special {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    h4.special {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    /* coming soon page */
+    .coming-soon-con .new-logo {
+        margin-bottom: 30px;
+        width: 250px;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 40px;
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .coming-soon-con h3 {
+        font-size: 27px;
+    }
+
+    .primary-button a,
+    .primary-button button,
+    .secondary-button a,
+    .secondary-button button,
+    .elementary-button a,
+    .elementary-button button {
+        min-width: 170px;
+        height: 50px;
+        line-height: 48px;
+    }
+
+    /* special */
+    .special-text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .padding-bottom100 {
+        padding-bottom: 80px;
+    }
+
+    .padding-top100 {
+        padding-top: 80px;
+    }
+
+
+    .error-con h2 {
+        font-size: 100px;
+        line-height: 105px;
+        margin-bottom: 10px;
+    }
+
+    .error-con h2 i {
+        font-size: 100px;
+        line-height: 110px;
+    }
+
+    /* HEADER */
+    .header-con .navbar-expand-lg .navbar-nav {
+        gap: 38px;
+    }
+
+    .header-con .header-contact {
+        margin-left: 50px;
+    }
+
+    .heading-title-con {
+        margin-bottom: 40px;
+    }
+
+    .header-con {
+        padding: 13px 0;
+    }
+
+    /* 404 */
+    .error-con h2 {
+        font-size: 100px;
+        line-height: 105px;
+        margin-bottom: 10px;
+    }
+
+    .error-con h2 i {
+        font-size: 100px;
+        line-height: 110px;
+    }
+
+    /* coming soon page */
+    .coming-soon-con .new-logo {
+        margin-bottom: 30px;
+        width: 250px;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 40px;
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .coming-soon-con h3 {
+        font-size: 27px;
+    }
+
+    /*  */
+    #back-to-top-btn {
+        bottom: 83px;
+        right: 17px;
+        width: 58px;
+        height: 54px;
+    }
+
+    .text-size-18 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    /* CUSTOMER REVIEW SECTION */
+    .customers-reviews-con .owl-carousel .owl-nav button.owl-prev,
+    .why-choose-us-con .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+    }
+
+    .customers-reviews-con .owl-carousel .owl-nav button.owl-next,
+    .why-choose-us-con .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+    }
+
+    .customers-reviews-con .owl-carousel .owl-nav,
+    .why-choose-us-con .owl-carousel .owl-nav {
+        display: block !important;
+        margin: 15px auto 0;
+        bottom: 0;
+        position: relative;
+        text-align: center;
+        left: 0;
+        width: 90px;
+        right: 0;
+    }
+
+    .customers-reviews-con .owl-item,
+    .why-choose-us-con .owl-item {
+        padding: 30px 22px 30px;
+    }
+
+    /* PRICING PLANS SECTION */
+    .perfect-plans-con .owl-carousel .owl-nav {
+        display: block !important;
+        margin: 15px auto 0;
+        bottom: 0;
+        position: relative;
+        text-align: center;
+        left: 0;
+        width: 90px;
+        right: 0;
+    }
+
+    .perfect-plans-con .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+    }
+
+    .perfect-plans-con .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+    }
+
+    .padding-top-xl {
+        padding-top: 270px;
+    }
+
+    /* FOOTER SECTION  */
+    .footer-con .middle-portion {
+        padding: 0 0 40px;
+    }
+
+    .text-size-16,
+    .font-size-16 {
+        font-size: 15px;
+    }
+
+    .articles-and-tips-con .element7,
+    .articles-and-tips-con .element8 {
+        display: none;
+    }
+
+    .left-shape,
+    .right-shape {
+        width: 700px;
+    }
+
+    .heading-title-con p br {
+        display: none;
+    }
+
+    .heading-title-con p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .footer-con .copyright {
+        padding: 14px 0;
+    }
+
+    .footer-con .middle-portion .links li {
+        margin-bottom: 8px;
+    }
+
+    .footer-con .middle-portion .icon li {
+        padding-left: 28px;
+        margin-bottom: 10px;
+    }
+
+    .footer-con .middle-portion .footer-text {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 22px;
+    }
+
+    /* CUSTOMER REVIEW SECTION */
+    .customers-reviews-con .white-box p {
+        margin-bottom: 24px;
+    }
+
+    /* ARTICLES AND TIPS SECTION */
+    .articles-and-tips-con .article-white-box {
+        padding: 25px 25px;
+    }
+
+    .perfect-plans-con .owl-item,
+    .perfect-plans-con.specific-plans-con .plan-box {
+        padding: 30px 26px;
+    }
+
+    /* SUPPORT SECTION  */
+    .support-con .support-img-con img {
+        width: 690px;
+    }
+
+    .support-con .support-img-con figure {
+        left: unset;
+    }
+
+    .support-con .element3 {
+        bottom: 100px;
+        right: 37%;
+    }
+
+    .support-con .element7 {
+        bottom: 80px;
+        right: 185px;
+    }
+
+    /* FEATURE AND BENEFITS SECTION  */
+    .features-and-benefits-con .dedicated-box img {
+        margin-bottom: 24px;
+    }
+
+    .features-and-benefits-con .feature-top {
+        padding: 30px 25px 30px;
+    }
+
+    .features-and-benefits-con .feature-bottom {
+        padding: 20px 0 5px;
+    }
+
+    /* FEATURED GAMES SECTION  */
+    .featured-games-con .game-box .game-details p br {
+        display: none;
+    }
+
+    .featured-games-con .game-box .game-details {
+        left: 15px;
+        bottom: 20px;
+    }
+
+    /* BANNER SECTION */
+    .banner-con {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner-con .banner-content-con p {
+        margin-bottom: 28px;
+        line-height: 27px;
+        font-size: 17px;
+    }
+
+    .banner-con ul.social-con {
+        left: -23px;
+        top: 34%;
+    }
+
+    .banner-con ul.social-con li i {
+        font-size: 17px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+
+    .banner-con .banner-content-con .circle {
+        width: 500px;
+        height: 500px;
+        margin-left: 33px;
+    }
+
+    .banner-outer-wrapper .element4 {
+        width: 100px;
+        left: 45%;
+    }
+
+    .banner-outer-wrapper .element1 {
+        left: 49%;
+        top: 109px;
+        width: 30px;
+    }
+
+    .banner-outer-wrapper {
+        background-position: 41% center;
+    }
+
+    .banner-outer-wrapper .element5 {
+        left: 118px;
+        top: 15px;
+        width: 96px;
+    }
+
+    .about-our-company-con .white-box {
+        padding: 30px 40px;
+    }
+
+    .web-hosting-solutions-con .heading-title-con p br {
+        display: none;
+    }
+
+    .web-hosting-solutions-con ul {
+        margin-bottom: 25px;
+    }
+
+    .support-con .element10 {
+        top: 20px;
+        right: 41%;
+        width: 25px;
+    }
+
+    .cta-con2 .primary-button a,
+    .cta-con2 .secondary-button a {
+        min-width: 250px;
+    }
+
+    /*  */
+    .faq-con .faq_content span {
+        margin-bottom: 16px;
+    }
+
+    .faq-con .faq_content h2 {
+        margin-bottom: 35px;
+    }
+
+    .faq-con .faq_content .faq-image::before {
+        width: 451px;
+        border-radius: 15px;
+    }
+
+    .faq-con .accordian-inner .card-header a {
+        padding: 18px 40px 18px 18px;
+    }
+
+    .faq-con .accordian-inner .card-body {
+        padding: 20px 18px 0;
+    }
+
+    .faq-con .accordion-card .btn-link::before {
+        top: 18px;
+        right: 18px;
+    }
+
+    /* FAQ SECTION */
+    .faq-con .accordion-card h5 {
+        font-size: 22px;
+    }
+
+    .faq-con .faq_content h5 {
+        margin-bottom: 16px;
+    }
+
+    .faq-con .faq_content h2 {
+        margin-bottom: 35px;
+    }
+
+    .faq-con .faq_content .faq-image::before {
+        width: 451px;
+        border-radius: 15px;
+    }
+
+    .faq-con .accordian-inner .card-header a {
+        padding: 18px 40px 18px 18px;
+    }
+
+    .faq-con .accordian-inner .card-body {
+        padding: 20px 18px 0;
+    }
+
+    /* contact page */
+    .contact-form-con form ul li {
+        width: 48.5%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .featured-games-details-con .game-box .game-head-content {
+        padding: 12px 17px;
+    }
+
+    .featured-games-details-con .game-box .game-head-content h3 {
+        font-size: 28px;
+    }
+
+    .banner2-con h1 {
+        font-size: 54px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content {
+        padding: 0 40px;
+    }
+
+    /*  */
+    .gaming-features-con .white-box {
+        padding: 35px 20px 35px;
+    }
+
+    /* DATACENTER */
+    .performance-con .performance_contentbox {
+        height: 100%;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map {
+        top: 50px;
+        left: 30px;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map img {
+        width: 300px;
+    }
+
+    .performance-con .performance_contentbox .content-box {
+        width: 250px;
+        height: 220px;
+        padding-left: 20px;
+        right: 15px;
+    }
+
+    /* index 03 page */
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con .banner3-icon {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        right: -24px;
+        top: -24px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .customers-reviews-con .owl-item,
+    .why-choose-us-con .owl-item {
+        padding: 28px 20px 28px;
+    }
+
+    .featured-games-details-con .game-box .game-head-content {
+        padding: 8px 15px;
+    }
+
+    .perfect-plans-con .plan-box p br {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width : 991px) {
+    .padding-top {
+        padding-top: 70px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 70px;
+    }
+
+    /* font sizes */
+    h1,
+    .banner-con .banner-content-con h1 span {
+        font-size: 37px;
+        line-height: 46px;
+        margin-bottom: 10px;
+    }
+
+    h2,
+    .support-con .support-content-con h2 span {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    h2.special {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    h4 {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    body {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+    /* coming soon  */
+    .coming-soon-con .new-logo {
+        width: 200px;
+    }
+
+    /* coming soon page */
+    .compaign_countdown ul li {
+        margin: 0 11px;
+        min-height: 100px;
+        /* width: 21%; */
+        min-width: 100px;
+    }
+
+    .compaign_countdown ul li span.days,
+    .compaign_countdown ul li span.hours,
+    .compaign_countdown ul li span.minutes,
+    .compaign_countdown ul li span.seconds {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 32px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    /* back button */
+    #back-to-top-btn {
+        bottom: 65px;
+        right: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    /* paddings */
+    .padding-top100 {
+        padding-top: 50px;
+    }
+
+    .padding-bottom100 {
+        padding-bottom: 50px;
+    }
+
+    /* buttons */
+    .primary-button a,
+    .primary-button button,
+    .secondary-button a,
+    .secondary-button button,
+    .elementary-button a,
+    .elementary-button button {
+        min-width: 170px;
+        height: 48px;
+        line-height: 46px;
+        font-size: 15px;
+    }
+
+    .primary-button a i,
+    .secondary-button a i,
+    .elementary-button a i,
+    .primary-button button i,
+    .secondary-button button i,
+    .elementary-button button i {
+        font-size: 12px;
+    }
+
+    .header-con .navbar-brand img {
+        width: 170px;
+    }
+
+    /* 404 page */
+    .error-con h2 i {
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    /* HEADER */
+    .navbar-toggler {
+        top: 60%;
+        right: 0;
+        padding: 0;
+        width: 32px;
+        border: none;
+        position: absolute;
+        transform: translateY(-65%);
+    }
+
+    .navbar-light .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .header-con .navbar-expand-lg .navbar-nav {
+        gap: 4px;
+        margin-right: 0;
+        padding: 10px 20px;
+        align-items: start;
+    }
+
+    .header-con .navbar-light .navbar-nav .dropdown .nav-link::after {
+        top: 17px;
+    }
+
+    .header-con .navbar-light .navbar-nav .nav-link:hover {
+        color: var(--accent--color);
+    }
+
+    .header-con .navbar-nav li {
+        margin-left: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .header-con .navbar-light .navbar-nav .dropdown-menu .dropdown-item {
+        color: var(--navy-color);
+        padding: 8px 15px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .header-con .navbar-light .navbar-nav .dropdown-menu {
+        padding: 10px;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .header-con .navbar-light .navbar-nav .nav-link {
+        display: inline-block;
+        color: var(--secondary--color);
+        padding: 5px 0 !important;
+        display: block;
+    }
+
+    .header-con .navbar-light .navbar-nav .nav-item:last-child a {
+        border-bottom: none;
+    }
+
+    .header-con .navbar-light .navbar-nav .nav-link::before {
+        display: none;
+    }
+
+    .navbar-toggler-icon {
+        float: left;
+        width: 100%;
+        height: 2px;
+        margin: 3px 0;
+        background: var(--primary--color);
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar-toggler .navbar-toggler-icon:nth-child(1),
+    .navbar-toggler .navbar-toggler-icon:nth-child(3) {
+        -webkit-transition: transform .35s ease-in-out;
+        -moz-transition: transform .35s ease-in-out;
+        -o-transition: transform .35s ease-in-out;
+        transition: transform .35s ease-in-out;
+    }
+
+    .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(1) {
+        position: absolute;
+        top: 8px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        left: 0px;
+    }
+
+    .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(2) {
+        height: 12px;
+        visibility: hidden;
+        background-color: transparent;
+    }
+
+    .navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-child(3) {
+        position: absolute;
+        top: 8px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        left: 0px;
+    }
+
+    .navbar-collapse.collapse,
+    .navbar-collapse.collapsing {
+        width: 100%;
+        right: 0;
+        top: 60px;
+        z-index: 999;
+        position: absolute;
+        background-color: #111544;
+        border-radius: 5px
+    }
+
+    /*  */
+    .header-con {
+        padding: 12px 0;
+    }
+
+    .header-contact {
+        margin-left: 0;
+    }
+
+    .special-text {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 7px;
+    }
+
+    /*  */
+    .main-box {
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+
+
+    /* header */
+    .header-con .header-contact {
+        margin-left: 0;
+        right: 0px;
+        right: 45px;
+        position: relative;
+    }
+
+    /* 404 page */
+    .error-con h2 i {
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    /* coming soon  */
+    .coming-soon-con .new-logo {
+        width: 200px;
+    }
+
+    /* coming soon page */
+    .compaign_countdown ul li {
+        margin: 0 11px;
+        min-height: 100px;
+        /* width: 21%; */
+        min-width: 100px;
+    }
+
+    .compaign_countdown ul li span.days,
+    .compaign_countdown ul li span.hours,
+    .compaign_countdown ul li span.minutes,
+    .compaign_countdown ul li span.seconds {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 32px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .heading-title-con {
+        margin-bottom: 30px;
+    }
+
+    .text-size-18 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .breadcrumb {
+        padding: 8px 14px;
+    }
+
+    /*  */
+    #back-to-top-btn {
+        bottom: 86px;
+        right: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    /* FOOTER SECTION */
+    .footer-con .copyright {
+        padding: 12px 0;
+    }
+
+    .footer-con .middle-portion {
+        padding: 0 0 30px;
+    }
+
+    .footer-con .middle-portion .icon .text1 {
+        margin-right: 0;
+    }
+
+    .footer-con .footer-inner-links h4 {
+        margin-bottom: 16px;
+    }
+
+    .padding-top-xl {
+        padding-top: 200px;
+    }
+
+    /* CTA SECTION */
+    .cta-con .secondary-button a {
+        min-width: 250px;
+    }
+
+    .cta-con .cta-inner-con {
+        margin-bottom: -145px;
+    }
+
+    .cta-con .cta-content-con {
+        padding-left: 40px;
+    }
+
+    .cta-con .cta-content-con .heading-title-con h2 {
+        margin-bottom: 15px;
+    }
+
+    /* ARTICLES AND TIPS SECTION */
+    .articles-and-tips-con .col-lg-4.col-md-6:last-child {
+        margin: 0 auto;
+    }
+
+    /* SUPPORT SECTION */
+    .support-con .support-img-con img {
+        width: 450px;
+        max-width: unset;
+    }
+
+    .support2-con.support-con .support-img-con img {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .support-con .support-img-con figure {
+        left: -140px;
+    }
+
+    .support2-con.support-con .support-img-con figure {
+        left: unset;
+    }
+
+    .support-con .element3 {
+        bottom: 48px;
+        right: 34%;
+        width: 80px;
+    }
+
+    .articles-and-tips-con .element9,
+    .support-con .element9 {
+        top: 0;
+        right: 90px;
+        width: 100px;
+    }
+
+    .support-con .element7 {
+        bottom: 53px;
+        right: 148px;
+        width: 18px;
+    }
+
+    .support-con .element10 {
+        top: 40px;
+        right: 40%;
+        width: 26px;
+    }
+
+    .features-and-benefits-con .feature-top {
+        padding: 22px 25px 22px;
+    }
+
+    /* Font Size  */
+    h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    /* FEATURES GAMES SECTION */
+    .featured-games-con .game-box .game-details {
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* BANNER SECTION  */
+    .banner-con ul.social-con li {
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    .banner-con ul.social-con {
+        left: 0;
+        top: unset;
+        bottom: 0;
+        position: relative;
+    }
+
+    .banner-con .banner-content-con .circle {
+        width: 415px;
+        height: 400px;
+        margin-left: -25px;
+    }
+
+    .banner-outer-wrapper .element3 {
+        display: none;
+    }
+
+    .banner-con .banner-content-con p {
+        margin-bottom: 20px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .banner-con ul.social-con li i {
+        border-radius: 8px;
+        font-size: 15px;
+        height: 34px;
+        width: 34px;
+        line-height: 34px;
+    }
+
+    .banner-con .banner-content-con p br {
+        display: none;
+    }
+
+    .banner-con .banner-inner-content {
+        padding: 0 20px;
+    }
+
+    .banner-outer-wrapper .element2 {
+        display: none;
+    }
+
+    .banner-outer-wrapper {
+        background-position: center;
+    }
+
+    .banner-con ul.social-con {
+        left: 0;
+        top: unset;
+        bottom: 0;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .banner-con {
+        padding-top: 14px;
+        padding-bottom: 20px;
+    }
+
+    .banner-con .banner-content-con span {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .banner-con .banner-content-con .secondary-button a {
+        min-width: 240px;
+    }
+
+    .left-shape,
+    .right-shape {
+        width: 600px;
+    }
+
+    .articles-and-tips-con .article-white-box {
+        padding: 20px 20px;
+    }
+
+    .featured-games-con .game-box h4 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    /* FOOTER */
+    .footer-con .middle-portion .footer-text {
+        margin-bottom: 18px;
+    }
+
+    .footer-con .col-lg-4.col-md-6.col-sm-6.col-12,
+    .footer-con .col-lg-2.col-md-6.col-sm-6.col-12 {
+        margin-bottom: 20px;
+    }
+
+    /*  */
+    .about-our-company-con .white-box {
+        padding: 25px 25px;
+    }
+
+    .about-our-company-con .white-box img {
+        margin-bottom: 18px;
+    }
+
+    .about-our-company-con .white-box h4 {
+        margin-bottom: 16px;
+    }
+
+    .web-hosting-solutions-con .col-lg-6.col-md-7 {
+        padding-left: 0;
+    }
+
+    .web-hosting-solutions-con .heading-title-con h2 {
+        margin-bottom: 16px;
+    }
+
+    .web-hosting-solutions-con .heading-title-con p {
+        margin-bottom: 16px;
+    }
+
+    .web-hosting-solutions-con ul li {
+        padding-left: 22px;
+        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .web-hosting-solutions-con ul {
+        margin-bottom: 20px;
+    }
+
+    .web-hosting-solutions-con {
+        padding: 50px 0;
+    }
+
+    /*  */
+
+    .faq-con .faq_content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .faq-con .faq_content span {
+        margin-bottom: 8px;
+    }
+
+    .faq-con .faq_content h2 {
+        margin-bottom: 30px;
+    }
+
+    .faq-con .faq_content .faq-image {
+        display: inline-block;
+    }
+
+    .faq-con .faq_content .faq-image img {
+        width: 415px;
+    }
+
+    .faq-con .faq_content .faq-image::before {
+        width: 415px;
+    }
+
+    .faq-con .accordion-card {
+        margin-bottom: 20px;
+    }
+
+    /*  */
+    .font-size-20 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .web-hosting-solutions-con .heading-title-con p {
+        font-size: 15px;
+    }
+
+    .web-hosting-solutions-con .heading-title-con h2 {
+        margin-bottom: 10px;
+    }
+
+    .web-solutions-content-con {
+        padding-right: 10px;
+    }
+
+    .support-con .element10 {
+        display: none;
+    }
+
+    .faq-con .ellipse {
+        display: none;
+    }
+
+    /* contact */
+    .contact-help-con .white-box img {
+        margin-bottom: 18px;
+        height: 48px;
+    }
+
+    .contact-help-con .white-box {
+        padding: 20px 10px;
+    }
+
+    .contact-help-con .col-lg-4.col-md-4 {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+    }
+
+    .contact-form-con form ul li input {
+        padding: 11px 15px;
+        height: 52px;
+    }
+
+    .contact-help-con .white-box h4 {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    /*  */
+    .featured-games-details-con .col-lg-4.col-md-6:nth-last-of-type(-n+3) {
+        margin-bottom: 30px;
+    }
+
+    .featured-games-details-con .col-lg-4.col-md-6:nth-last-of-type(-n+1) {
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .specific-plans-con .col-lg-4.col-md-6:nth-last-child(-n+3) {
+        margin-bottom: 30px;
+    }
+
+    .specific-plans-con .col-lg-4.col-md-6:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    /* datacenter */
+    .performance-con .performance_wrapper ul li a {
+        margin-bottom: 12px;
+        padding: 14px 15px;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map {
+        top: 40px;
+        left: 10px;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map img {
+        width: 225px;
+    }
+
+    .performance-con .performance_contentbox .content-box {
+        width: 180px;
+        height: 193px;
+        padding-left: 10px;
+        right: 10px;
+        top: 25px;
+    }
+
+    .performance-con .performance_wrapper ul li a h4 {
+        font-size: 18px;
+    }
+
+    .performance-con .performance_contentbox .content-box li {
+        margin-bottom: 6px;
+        padding-left: 20px;
+    }
+
+    .performance-con .element11,
+    .performance-con .element12,
+    .performance-con .element10 {
+        display: none;
+    }
+
+    .support-con.support2-con ul li {
+        margin-bottom: 4px;
+        padding-left: 25px;
+        font-size: 16px;
+    }
+
+    .support-con.support2-con .element11,
+    .support-con.support2-con .element7 {
+        display: none;
+    }
+
+    .gaming-features-con .col-lg-4.col-md-6:nth-last-of-type(-n+3) {
+        margin-bottom: 30px;
+    }
+
+    .gaming-features-con .col-lg-4.col-md-6:nth-last-of-type(-n+2) {
+        margin-bottom: 0;
+    }
+
+    .banner2-con h1 {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 0;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content {
+        padding: 0 30px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con span.span-tag {
+        width: 240px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* index 03 page */
+    .banner3-con p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con img.main-img3 {
+        border-top-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .banner3-con .span-gradient {
+        margin-bottom: 20px;
+    }
+
+    .banner3-con .social-con {
+        top: unset;
+        left: 0;
+        bottom: -72px;
+    }
+
+    .perfect-plans-con .plan-box p br {
+        display: none;
+    }
+
+    .perfect-plans-con ul {
+        min-height: 160px;
+    }
+
+
+}
+
+@media screen and (max-width : 767px) {
+
+.language-box {
+    margin-left: 0;
+    margin-right: 45px;
+}
+    
+
+    /*  */
+    .padding-top {
+        padding-top: 60px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 60px;
+    }
+
+    /* font sizes */
+    h1,
+    .banner-con .banner-content-con h1 span {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .banner2-con h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    h2,
+    .support-con .support-content-con h2 span {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    h2.special {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    /* 404 */
+    .error-con p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .error-con h2 {
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .error-con .secondary-button a {
+        min-width: 200px;
+    }
+
+    /* coming soon page styling */
+    .compaign_countdown ul li {
+        margin: 0 8px;
+        min-height: auto;
+        min-width: 70px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .compaign_countdown ul li span.days,
+    .compaign_countdown ul li span.hours,
+    .compaign_countdown ul li span.minutes,
+    .compaign_countdown ul li span.seconds {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .compaign_countdown ul {
+        float: left;
+        width: 100%;
+        min-width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 40px;
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    .coming-soon-con h3 {
+        font-size: 24px;
+    }
+
+    .coming-soon-con .new-logo {
+        width: 170px;
+    }
+
+    /* special */
+    .heading-title-con {
+        margin-bottom: 25px;
+    }
+
+    .special-text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+
+    /* buttons */
+    .primary-button a,
+    .primary-button button,
+    .secondary-button a,
+    .secondary-button button,
+    .elementary-button a,
+    .elementary-button button {
+        min-width: 160px;
+    }
+
+    /* button */
+    #back-to-top-btn {
+        bottom: 53px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* top bar section styling */
+
+    /*  */
+    .error-con h4 {
+        font-size: 21px;
+        line-height: 22px;
+        margin-bottom: 18px;
+    }
+
+    .error-con h2 i {
+        font-size: 85px;
+        line-height: 97px;
+    }
+
+    /* HEADER */
+
+    .header-con .navbar-light .navbar-nav .nav-link {
+        font-size: 15px;
+    }
+
+    .header-con {
+        padding: 10px 0;
+    }
+
+    .header-con .header-contact {
+        margin-left: 0;
+        right: 45px;
+        position: relative;
+    }
+
+    /* 404 */
+    .error-con p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .error-con h2 {
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .error-con .secondary-button a {
+        min-width: 210px;
+        font-size: 15px;
+    }
+
+    /*  */
+    .error-con h4 {
+        font-size: 21px;
+        line-height: 22px;
+        margin-bottom: 18px;
+    }
+
+    .error-con h2 i {
+        font-size: 85px;
+        line-height: 97px;
+    }
+
+    /* coming soon page styling */
+    .compaign_countdown ul li {
+        margin: 0 8px;
+        min-height: auto;
+        min-width: 70px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .compaign_countdown ul li span.days,
+    .compaign_countdown ul li span.hours,
+    .compaign_countdown ul li span.minutes,
+    .compaign_countdown ul li span.seconds {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .compaign_countdown ul {
+        float: left;
+        width: 100%;
+        min-width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 40px;
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    .coming-soon-con h3 {
+        font-size: 24px;
+    }
+
+    .coming-soon-con .new-logo {
+        width: 170px;
+    }
+
+    /* SUB BANNER SECTION */
+    .sub-banner-con {
+        padding: 40px 0 40px;
+        text-align: center;
+        background-position: center;
+        /* background-color: rgb(38, 19, 69, 20%); */
+    }
+
+    .breadcrumb-con {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        min-width: 180px;
+        width: auto;
+    }
+
+
+    .text-size-16,
+    .font-size-16 {
+        font-size: 15px;
+    }
+
+    .heading-title-con h2 br {
+        display: none;
+    }
+
+    .text-size-18 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .breadcrumb {
+        padding: 8px 12px;
+        min-width: 180px;
+    }
+
+    .primary-button a,
+    .primary-button button,
+    .secondary-button a,
+    .secondary-button button,
+    .elementary-button a,
+    .elementary-button button {
+        min-width: 160px;
+        height: 44px;
+        line-height: 42px;
+        font-size: 15px;
+    }
+
+    /*  */
+    .left-shape,
+    .right-shape {
+        width: 500px;
+    }
+
+    /*  FOOTER SECTION */
+    .footer-con .middle-portion .footer-text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .footer-con .middle-portion .social-icons i {
+        font-size: 16px;
+        height: 36px;
+        width: 36px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .footer-con .copyright {
+        padding: 10px 0;
+    }
+
+    /* CTA SECTION */
+    .cta-con .cta-inner-con {
+        text-align: center;
+        position: relative;
+
+    }
+
+    .cta-con .cta-content-con {
+        position: relative;
+        z-index: 1;
+    }
+
+    .cta-con .cta-content-con {
+        padding-left: 0;
+    }
+
+    .cta-con .cta-inner-con::after {
+        background-color: rgba(0, 0, 0, 0.6);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        transition: ease-in-out 0.6s;
+    }
+
+    .articles-and-tips-con .article-box figure {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*  */
+    .support-con .support-img-con img {
+        width: 380px;
+        margin-bottom: 20px;
+    }
+
+    .support-con .support-img-con figure {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .support-con .support-content-con {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .support-con .element10,
+    .support-con .element9,
+    .support-con .element7,
+    .support-con .element3 {
+        display: none;
+    }
+
+    /* fEATURE & BENEFITS SECTION */
+    .features-and-benefits-con .col-lg-4.col-md-6 {
+        margin-bottom: 0;
+    }
+
+    .featured-games-con .col-lg-4.col-md-6.d-flex {
+        width: 350px;
+        margin: 0 auto 20px;
+        padding: 0;
+    }
+
+    .featured-games-con .col-lg-4.col-md-6.d-flex:last-child {
+        margin-bottom: 0;
+    }
+
+    /* BANNER SECTION */
+    .banner-con .banner-content-con .circle {
+        width: 100%;
+        height: unset;
+        margin: 0 auto;
+        /* background: rgb(0 0 0 / 50%); */
+        background: none;
+    }
+
+    .banner-con ul.social-con {
+        margin-left: 0;
+    }
+
+    .banner-con {
+        background: rgb(0 0 0 / 50%);
+        padding-top: 20px;
+    }
+
+    .banner-outer-wrapper .element4,
+    .banner-outer-wrapper .element1,
+    .banner-outer-wrapper .element5 {
+        display: none;
+    }
+
+    .banner-con .banner-content-con span {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+
+    .banner-con .banner-content-con h1 {
+        margin-bottom: 8px;
+        line-height: 38px;
+    }
+
+    .banner-con .banner-content-con p {
+        margin-bottom: 16px;
+        line-height: 25px;
+        font-size: 16px;
+    }
+
+    .banner-con .banner-content-con .secondary-button a {
+        min-width: 230px;
+    }
+
+    .banner-con ul.social-con {
+        margin-top: 13px;
+    }
+
+    .features-and-benefits-con .feature-bottom p {
+        font-size: 16px;
+    }
+
+    /*  */
+    .about-our-company-con {
+        text-align: center;
+    }
+
+    .about-our-company-con .col-lg-6.col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .about-our-company-con .white-box img {
+        margin-bottom: 14px;
+    }
+
+    .about-our-company-con .white-box h4 {
+        margin-bottom: 10px;
+    }
+
+    .about-our-company-con .col-lg-6.col-md-6:nth-last-of-type(-n+1) {
+        margin-bottom: 0;
+    }
+
+    .web-hosting-solutions-con::before {
+        width: 100%;
+    }
+
+    .web-hosting-solutions-con .element1 {
+        display: none;
+    }
+
+    .web-hosting-solutions-con .element2 {
+        display: none;
+    }
+
+    .web-hosting-solutions-con::after {
+        background-color: rgb(32, 42, 96, 80%);
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .web-hosting-solutions-con .web-solutions-content-con {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .web-hosting-solutions-con .col-lg-6.col-md-7 {
+        padding-left: 15px;
+    }
+
+    .web-hosting-solutions-con ul {
+        text-align: left;
+        margin: 0 auto 20px;
+        width: 70%;
+    }
+
+    .web-hosting-solutions-con .heading-title-con p {
+        margin-bottom: 12px;
+    }
+
+    .web-hosting-solutions-con .heading-title-con h2 {
+        margin-bottom: 12px;
+    }
+
+    .web-hosting-solutions-con .col-lg-6.col-md-6.pr-0 {
+        padding-right: 15px !important;
+    }
+
+    /* faq */
+    .faq-con .faq_content {
+        margin-bottom: 25px;
+    }
+
+    .faq-con .faq_content span {
+        margin-bottom: 6px;
+    }
+
+    .faq-con .faq_content h2 {
+        margin-bottom: 20px;
+    }
+
+    .faq-con .faq_content .faq-image img {
+        width: 370px;
+        border: 8px solid transparent;
+    }
+
+    .faq-con .faq_content .faq-image::before {
+        width: 370px;
+    }
+
+    .faq-con .accordian-inner .card-header a {
+        padding: 12px 40px 12px 18px;
+    }
+
+    .faq-con .accordian-inner .card-body {
+        padding-top: 18px;
+    }
+
+    .faq-con .accordion-card .btn-link::before {
+        font-size: 16px;
+        top: 12px;
+    }
+
+    .faq-con .accordion-card h5 {
+        font-size: 18px;
+    }
+
+    .faq-con .ellipse {
+        display: none;
+    }
+
+    /* SUB BANNER SECTION */
+    .sub-banner-con .sub-inner-content-con {
+        display: block !important;
+    }
+
+    .sub-banner-con .sub-inner-content-con p {
+        margin-bottom: 20px !important;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .about-our-company-con .white-box h3 {
+        font-size: 22px;
+    }
+
+    .contact-help-con .col-lg-4.col-md-4 {
+        margin: 0 auto 20px;
+        width: 400px;
+    }
+
+    .contact-help-con .white-box {
+        box-shadow: 0 20px 50px rgb(0 0 0 / 5%);
+    }
+
+    .contact-help-con .col-lg-4.col-md-4:nth-last-of-type(-n+1) {
+        margin-bottom: 0;
+    }
+
+    /* contact */
+    .contact-form-con form ul li {
+        width: 100%;
+    }
+
+    .contact-form-con form ul li input {
+        padding: 10px 14px;
+        height: 50px;
+    }
+
+    .contact-form-con form ul li textarea {
+        height: 100px;
+    }
+
+    .contact-form-con form .primary-button button {
+        min-width: 200px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .specific-plans-con .col-lg-4.col-md-6:nth-last-child(-n+2) {
+        margin-bottom: 30px;
+    }
+
+    .specific-plans-con .col-lg-4.col-md-6:nth-last-child(-n+1) {
+        margin-bottom: 0px;
+    }
+
+    .perfect-plans-con .price {
+        margin-bottom: 12px;
+    }
+
+    /* datacenter */
+    .performance-con .performance_wrapper ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px !important;
+    }
+
+    .performance-con .performance_wrapper ul li {
+        width: auto;
+        margin: 0 5px;
+        display: inline-block;
+    }
+
+    .performance-con .performance_wrapper ul li:first-child {
+        margin-left: 0;
+    }
+
+    .performance-con .performance_wrapper ul li:last-child {
+        margin-right: 0;
+    }
+
+    .performance-con .performance_wrapper ul li a {
+        margin-bottom: 0;
+        padding: 10px 14px;
+    }
+
+    .performance-con .performance_wrapper ul li a i {
+        display: none;
+    }
+
+    .performance-con .performance_contentbox {
+        height: 210px;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map {
+        position: relative;
+        top: 24px;
+        left: 18px;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map img {
+        width: 225px;
+    }
+
+    .performance-con .performance_contentbox .content-box {
+        width: 230px;
+        height: 180px;
+        padding-left: 15px;
+        right: 10px;
+        top: 15px;
+    }
+
+    .performance-con .performance_contentbox .content-box h5 {
+        margin-bottom: 6px;
+    }
+
+    .performance-con .performance_contentbox .content-box li {
+        margin-bottom: 2px;
+        padding-left: 22px;
+    }
+
+    .performance-con .performance_contentbox .content-box i {
+        font-size: 12px;
+        top: 8px;
+    }
+
+    .performance-con .performance_wrapper ul li a h4 {
+        font-size: 16px;
+    }
+
+    .support-con.support2-con ul {
+        text-align: left;
+        margin: 0 auto;
+        width: 45%;
+    }
+
+    .support2-con.support-con .support-img-con img {
+        width: 60%;
+    }
+
+    .gaming-features-con .col-lg-4.col-md-6:nth-last-of-type(-n+2) {
+        margin-bottom: 30px;
+    }
+
+    .gaming-features-con .col-lg-4.col-md-6:nth-last-of-type(-n+1) {
+        margin-bottom: 0;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .secondary-button a {
+        min-width: 220px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content p {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content {
+        padding: 0 20px;
+    }
+
+    .header-con .header-contact a {
+        min-width: 100px;
+        height: 42px;
+        line-height: 40px;
+    }
+
+    .header-con .header-contact a i {
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        right: 5px;
+    }
+
+    .navbar-toggler {
+        top: 58%;
+    }
+
+    /* indedx 03 */
+    .banner3-con {
+        text-align: center;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .banner3-img-con {
+        margin: 20px auto 0;
+        width: 60%;
+    }
+
+    .banner3-con .social-con {
+        bottom: unset;
+        position: relative !important;
+        margin-top: 15px;
+    }
+
+    .banner3-con .social-con i {
+        font-size: 15px;
+        height: 40px;
+        width: 40px;
+        line-height: 38px;
+    }
+
+    .banner3-con p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con img.main-img3 {
+        border-top-left-radius: 120px;
+        border-bottom-right-radius: 120px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con .banner3-icon {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        right: -24px;
+        top: -24px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con .banner3-icon img {
+        width: 40px;
+    }
+
+    .featured-games-details-con .game-box .game-head-content a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    #rotate-icon {
+        font-size: 18px;
+    }
+
+    .perfect-plans-con ul {
+        min-height: auto;
+    }
+}
+
+
+@media screen and (max-width : 575px) {
+
+    /*  */
+    .padding-top {
+        padding-top: 40px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 40px;
+    }
+
+    /* font sizes */
+    h1,
+    .banner-con .banner-content-con h1 span {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h2.special {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /*  */
+    .heading-title-con h2 br {
+        display: none;
+    }
+
+    .heading-title-con h2 {
+        margin-bottom: 14px;
+    }
+
+    /* 404 page */
+    .error-con h2 {
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 14px;
+    }
+
+    .error-con p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .error-con .secondary-button a {
+        min-width: 180px;
+        padding: 0 15px;
+    }
+
+    /* coming soon page styling */
+    .compaign_countdown ul li span.days,
+    .compaign_countdown ul li span.hours,
+    .compaign_countdown ul li span.minutes,
+    .compaign_countdown ul li span.seconds {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .compaign_countdown ul li {
+        margin: 0px 6px;
+        min-height: auto;
+        min-width: 70px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 25px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .coming-soon-con h3 {
+        font-size: 22px;
+    }
+
+    .coming-soon-con .new-logo {
+        width: 150px;
+    }
+
+    .heading-title-con {
+        margin-bottom: 20px;
+    }
+
+    .top-bar-con a {
+        font-size: 12px;
+        line-height: 12px;
+        margin: 0 13px;
+        display: inline-block;
+    }
+
+    body {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .special-text {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+
+    /*  */
+    .error-con h4 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+
+    .error-con h2 i {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .error-con p br {
+        display: none;
+    }
+
+    .coming-soon-con .new-logo {
+        margin-bottom: 20px;
+    }
+
+    .heading-title-con {
+        margin-bottom: 20px;
+    }
+
+    /* HEADER */
+    .header-con {
+        padding: 12px 0 10px;
+    }
+
+    /*  */
+    #back-to-top-btn {
+        bottom: 37px;
+        right: 26px;
+    }
+
+    #back-to-top-btn::after {
+        font-size: 14px;
+    }
+
+    .primary-button a,
+    .primary-button button,
+    .secondary-button a,
+    .secondary-button button,
+    .elementary-button a,
+    .elementary-button button {
+        min-width: 160px;
+        height: 46px;
+        line-height: 44px;
+        font-size: 14px;
+    }
+
+    .header-con .header-contact a {
+        min-width: 100px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 13px;
+    }
+
+    .header-con .header-contact {
+        right: 42px;
+    }
+
+    .header-con .navbar-brand img {
+        width: 143px;
+    }
+
+    /* 404 page */
+    .error-con h2 {
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 14px;
+    }
+
+    .error-con p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .error-con .secondary-button a {
+        min-width: 200px;
+        padding: 0 15px;
+    }
+
+    .error-con h4 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+
+    .error-con h2 i {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .error-con p br {
+        display: none;
+    }
+
+    /* coming soon page styling */
+    .compaign_countdown ul li span.days,
+    .compaign_countdown ul li span.hours,
+    .compaign_countdown ul li span.minutes,
+    .compaign_countdown ul li span.seconds {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .compaign_countdown ul li {
+        margin: 0px 6px;
+        min-height: auto;
+        min-width: 70px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .coming-soon-con h1 {
+        margin-bottom: 25px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .coming-soon-con h3 {
+        font-size: 22px;
+    }
+
+    .coming-soon-con .new-logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    /*  */
+    .left-shape,
+    .right-shape {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer-con {
+        text-align: center;
+    }
+
+    .footer-con .footer-inner-links ul {
+        margin: 0 auto;
+        width: 100px;
+        text-align: left;
+    }
+
+    .footer-con .middle-portion .icon li {
+        text-align: left;
+    }
+
+    .footer-con .footer-inner-links h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer-con .middle-portion .icon li {
+        padding-left: 25px;
+    }
+
+    .text-size-16,
+    .font-size-16 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .footer-con .col-lg-3.col-md-6.col-sm-6.col-12 .footer-inner-links ul {
+        width: 210px;
+    }
+
+    .footer-con .pattern {
+        width: 250px;
+    }
+
+    .padding-top-xl {
+        padding-top: 40px;
+    }
+
+    .footer-con .col-lg-3.col-md-6.col-sm-6.col-12.pr-0 {
+        padding-right: 15px !important;
+        margin-bottom: 20px;
+    }
+
+    .footer-con .col-lg-3.col-md-6.col-sm-6.col-12.pl-0 {
+        padding-left: 15px !important;
+    }
+
+    .footer-con .middle-portion .email-form .check-box {
+        padding-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-con .middle-portion .email-form .check-box label {
+        margin-bottom: 0;
+    }
+
+    .footer-con .middle-portion .email-form .check-box label:before {
+        top: 1px;
+    }
+
+    .footer-con .middle-portion {
+        padding: 0 0 20px;
+    }
+
+    /* CTA SECTION */
+    .cta-con .cta-inner-con {
+        margin-bottom: 0;
+    }
+
+    .cta-con {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .cta-con .cta-inner-con {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .cta-con .secondary-button a {
+        min-width: 240px;
+    }
+
+    /* Customer Section */
+    .customers-reviews-con .white-box p {
+        margin-bottom: 14px;
+    }
+
+    .customers-reviews-con .white-box span,
+    .why-choose-us-con .white-box span {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .customers-reviews-con .owl-item,
+    .why-choose-us-con .owl-item {
+        padding: 25px 22px 25px;
+    }
+
+    /* ARTICLE AND TIPS SECTION */
+    .articles-and-tips-con .article-box {
+        padding-bottom: 130px;
+    }
+
+    .articles-and-tips-con .element9 {
+        display: none;
+    }
+
+    .perfect-plans-con .owl-carousel .owl-nav {
+        margin: 5px auto 18px;
+    }
+
+    .support-con .support-img-con img {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .features-and-benefits-con .feature-bottom p {
+        font-size: 15px;
+    }
+
+    .heading-title-con p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .banner-con .banner-inner-content {
+        padding: 0 0;
+    }
+
+    .banner-con .banner-content-con span {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .banner-con .banner-content-con h1 {
+        margin-bottom: 5px;
+        line-height: 36px;
+    }
+
+    .about-our-company-con .white-box {
+        padding: 20px 15px;
+    }
+
+    .web-hosting-solutions-con ul {
+        width: 60%;
+    }
+
+    .web-hosting-solutions-con .primary-button a {
+        min-width: 240px;
+    }
+
+    /* FAQ SECTION */
+    .faq-con .faq_content {
+        margin-bottom: 20px;
+    }
+
+    .faq-con .faq_content h5 {
+        margin-bottom: 4px;
+    }
+
+    .faq-con .faq_content .faq-image img {
+        width: 270px;
+        border: 6px solid transparent;
+    }
+
+    .faq-con .faq_content .faq-image::before {
+        width: 270px;
+        border-radius: 10px;
+    }
+
+    .faq-con .accordion-card {
+        margin-bottom: 15px;
+    }
+
+    .faq-con .accordian-inner .card-header a {
+        padding: 10px 30px 10px 12px;
+    }
+
+    .faq-con .accordian-inner .card-body {
+        padding: 12px 12px 5px;
+    }
+
+    .faq-con .accordion-card .btn-link::before {
+        font-size: 14px;
+        top: 11px;
+        right: 12px;
+    }
+
+    .faq-con .accordion-card h5 {
+        font-size: 19px;
+    }
+
+    /*  */
+    .cta-con2 .d-flex {
+        display: block !important;
+        text-align: center;
+    }
+
+    .cta-con2 h2 {
+        margin-bottom: 10px !important;
+    }
+
+    .cta-con2 .primary-button a,
+    .cta-con2 .secondary-button a {
+        min-width: 220px;
+    }
+
+    .cta-con2 {
+        padding: 35px 0;
+    }
+
+    .sub-banner-con .sub-inner-content-con p br {
+        display: none;
+    }
+
+    .sub-banner-con h1 {
+        margin-bottom: 4px;
+    }
+
+    .breadcrumb-item {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .sub-banner-con .sub-inner-content-con p {
+        margin-bottom: 16px !important;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .footer-con .copyright p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* contact */
+    .contact-help-con .white-box h4 {
+        margin-bottom: 10px;
+    }
+
+    .contact-help-con .white-box img {
+        height: 50px;
+    }
+
+    /* contact form */
+    .contact-form-con form ul li {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .contact-form-con form .primary-button button {
+        min-width: 170px;
+        height: 48px;
+        line-height: 47px;
+    }
+
+    .contact-form-con form ul li input {
+        padding: 10px 14px;
+        height: 46px;
+    }
+
+    .contact-form-con form ul li textarea {
+        height: 80px;
+    }
+
+    .featured-games-details-con .game-box .game-head-content h3 {
+        font-size: 24px;
+    }
+
+    /* datacenter */
+    .performance-con .performance_wrapper ul {
+        width: 310px;
+        margin: 0 auto 10px !important;
+    }
+
+    .performance-con .performance_wrapper ul li {
+        width: 42%;
+        margin: 0 5px;
+    }
+
+    .performance-con .performance_wrapper ul li:first-child {
+        margin-left: 5px;
+    }
+
+    .performance-con .performance_wrapper ul li:last-child {
+        margin-right: 5px;
+    }
+
+    .performance-con .performance_wrapper ul li a {
+        margin-bottom: 10px;
+        padding: 12px;
+        justify-content: center;
+    }
+
+    .performance-con .performance_wrapper ul li a h4 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .performance-con .performance_contentbox {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map {
+        top: 8px;
+        left: 0;
+        margin-bottom: 25px !important;
+    }
+
+    .performance-con .performance_contentbox .content .performance-map img {
+        width: 200px;
+    }
+
+    .performance-con .performance_contentbox .content-box {
+        text-align: left;
+        width: 100%;
+        padding-left: 0;
+        right: 0;
+        top: 0;
+        position: relative;
+        border: none;
+    }
+
+    .performance-con .performance_contentbox .content-box li {
+        display: block;
+    }
+
+    .support-con.support2-con ul {
+        text-align: left;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .performance-con .element7 {
+        display: none;
+    }
+
+    .footer-con .middle-portion .email-form .check-box {
+        margin-bottom: 0;
+    }
+
+    .featured-games-con .game-box img {
+        width: 100%;
+    }
+
+    .support-con.support2-con .glow {
+        width: 100%;
+    }
+
+    /* index 03 */
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con img.main-img3 {
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con .banner3-icon {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        right: -25px;
+        top: -25px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con .banner3-img-con .banner3-icon img {
+        width: 35px;
+    }
+
+    .banner-outer-wrapper.home3-outer-banner-wrapper .banner3-con {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner3-con .span-gradient {
+        margin-bottom: 16px;
+    }
+
+    /* home 02 */
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con img {
+        display: none;
+    }
+
+    .banner-outer-wrapper.home2-outer-banner-wrapper .banner2-con .banner-inner-content {
+        padding: 0 0;
+    }
+
+}

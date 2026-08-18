@@ -1,0 +1,172 @@
+<?php
+
+class Admin extends DatabaseObject {
+
+  static protected $table_name = "main_admin";
+  static protected $db_columns = ['id','email','username','hashed_password','type','created_at'];
+
+  public $id;
+  public $email;
+  public $username;
+  public $type;
+  public $created_at;
+  protected $hashed_password;
+  public $password;
+  public $confirm_password;
+    protected $password_required = true;
+
+  public function __construct($args=[]) {
+    $this->email = $args['email'] ?? '';
+    $this->username = $args['username'] ?? '';
+    $this->type = $args['type'] ?? '';
+    $this->created_at = $args['created_at'] ?? '';
+    $this->password = $args['password'] ?? '';
+    $this->confirm_password = $args['confirm_password'] ?? '';
+  }
+
+  public function full_name() {
+    return $this->username ;
+  }
+
+    protected function set_hashed_password() {
+        $this->hashed_password = password_hash($this->password, PASSWORD_BCRYPT);
+    }
+    
+    protected function create() {
+        $this->set_hashed_password();
+        return parent::create();
+    }
+    
+    protected function update() {
+        if($this->password != ''){
+            // validate password
+            $this->set_hashed_password();
+        }
+        else {
+            // password not being updates, skiip hashing and validation
+            $this->password_required = false;
+        }
+          
+        return parent::update();
+    }
+    
+   protected function validate() {
+  $this->errors = [];
+
+  if(is_blank($this->email)) {
+    $this->errors[] = "Email cannot be blank.";
+  } elseif (!has_length($this->email, array('max' => 255))) {
+    $this->errors[] = "Last name must be less than 255 characters.";
+  } elseif (!has_valid_email_format($this->email)) {
+    $this->errors[] = "Email must be a valid format.";
+  }
+  
+    if(is_blank($this->type)) {
+    $this->errors[] = "type cannot be blank.";
+  } elseif (!has_length($this->type, array('min' => 8, 'max' => 255))) {
+    $this->errors[] = "type must be between 8 and 255 characters.";
+  }
+       elseif(!has_unique_username($this->type, $this->id ?? 0)) {
+         $this->errors[] = "Type already used.";  
+       }
+
+  if(is_blank($this->username)) {
+    $this->errors[] = "Username cannot be blank.";
+  } elseif (!has_length($this->username, array('min' => 8, 'max' => 255))) {
+    $this->errors[] = "Username must be between 8 and 255 characters.";
+  }
+       elseif(!has_unique_username($this->username, $this->id ?? 0)) {
+         $this->errors[] = "Username already used.";  
+       }
+if($this->password_required){
+     if(is_blank($this->password)) {
+    $this->errors[] = "Password cannot be blank.";
+  } elseif (!has_length($this->password, array('min' => 8))) {
+    $this->errors[] = "Password must contain 8 or more characters";
+  } elseif (!preg_match('/[A-Z]/', $this->password)) {
+    $this->errors[] = "Password must contain at least 1 uppercase letter";
+  } elseif (!preg_match('/[a-z]/', $this->password)) {
+    $this->errors[] = "Password must contain at least 1 lowercase letter";
+  } elseif (!preg_match('/[0-9]/', $this->password)) {
+    $this->errors[] = "Password must contain at least 1 number";
+  } elseif (!preg_match('/[^A-Za-z0-9\s]/', $this->password)) {
+    $this->errors[] = "Password must contain at least 1 symbol";
+  }
+
+  if(is_blank($this->confirm_password)) {
+    $this->errors[] = "Confirm password cannot be blank.";
+  } elseif ($this->password !== $this->confirm_password) {
+    $this->errors[] = "Password and confirm password must match.";
+  } 
+}
+ 
+
+  return $this->errors;
+}
+    
+    static public function find_by_types($username) {
+                $sql = "SELECT * FROM  " . static::$table_name." ";
+        $sql .= "WHERE type ='" . self::$database->escape_string($username) . "'";
+        $obj_array = static::find_by_sql($sql);
+        if(!empty($obj_array)){
+            return array_shift($obj_array);
+        }
+        else{
+            return false;
+        }
+    }
+    
+    static public function find_by_username($username) {
+                $sql = "SELECT * FROM  " . static::$table_name." ";
+        $sql .= "WHERE username ='" . self::$database->escape_string($username) . "'";
+        $obj_array = static::find_by_sql($sql);
+        if(!empty($obj_array)){
+            return array_shift($obj_array);
+        }
+        else{
+            return false;
+        }
+    }
+
+    static public function find_by_email($email) {
+      $sql = "SELECT id FROM  " . static::$table_name." ";
+      $sql .= "WHERE email ='" . self::$database->escape_string($email) . "'";
+      $result = self::$database->query($sql);
+      return $result;
+      } 
+      
+    static public function find_by_type($email) {
+      $sql = "SELECT id FROM  " . static::$table_name." ";
+      $sql .= "WHERE type ='" . self::$database->escape_string($email) . "'";
+      $result = self::$database->query($sql);
+      return $result;
+      } 
+
+      public static function token_update($token,$email){
+        $sql ="UPDATE " . static::$table_name . " SET ";
+        $sql .= "token ='" . self::$database->escape_string($token) . "',";
+        $sql .= "tokenExpire=DATE_ADD(NOW(), INTERVAL 10 MINUTE)";
+        $sql .= "WHERE email ='" . self::$database->escape_string($email) . "'";
+        $result = self::$database->query($sql);
+        return $result;
+      }
+
+      static public function check_token($email,$token){
+        $sql = "SELECT * FROM " . static::$table_name . " ";
+        $sql .= "WHERE email='" . self::$database->escape_string($email) . "' AND token='" . self::$database->escape_string($token) . "'AND token<>'' AND tokenExpire > NOW()";
+        $obj_array = static::find_by_sql($sql);
+        if(!empty($obj_array)) {
+          return array_shift($obj_array);
+        } else {
+          return false;
+        }
+      }
+
+    
+    public  function verify_password($password) {
+        
+        return password_verify($password, $this->hashed_password);
+    }
+}
+
+?>
