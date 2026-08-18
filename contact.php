@@ -74,8 +74,8 @@ auto_detect_language();
         
         <!-- heading title con -->
       </div>
-      <div class="row align-items-center">
-        <div class="col-lg-4 col-md-4 d-flex">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-4 col-md-4 d-none">
           <div class="white-box position-relative w-100">
             <figure><img src="assets/images/contact-detail-img.png" alt="icon" class="img-fluid"></figure>
             <h4 class="font-weight-bold"><?php echo $contact_details ?></h4>
@@ -133,11 +133,9 @@ auto_detect_language();
           <form class="main-form text-center" method="post" id="contactpage">
             <ul class="list-unstyled p-0 float-left w-100 mb-0">
               <li>
-                <input type="text" placeholder="First Name" name="fname" id="fname">
+                <input type="text" placeholder="Full Name" name="fname" id="fname">
               </li>
-              <li>
-                <input type="text" placeholder="Last Name" name="lname" id="lname">
-              </li>
+               
               <li>
                 <input type="email" placeholder="Email Address" name="email" id="email">
               </li>
@@ -161,6 +159,8 @@ auto_detect_language();
     </div>
     <!-- contact form con -->
   </section>
+
+  
  
   <!-- FOOTER SECTION -->
   <?php include "includes/footer.php" ?>
