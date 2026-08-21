@@ -89,7 +89,7 @@
                 ?>
                 <div class="col-md-6 mb-3">
                     <div class="border rounded p-2">
-                        <label class="font-weight-bold">Card <?php echo $i ?> Image <small class="text-muted">(common)</small></label>
+                        <label class="font-weight-bold">Card <span style="color:red">(Size = 450 &times; 380 px)</span> <?php echo $i ?> Image <small class="text-muted">(common)</small></label>
                         <input type="file" class="form-control-file mb-2" name="<?php echo $image_column ?>">
                         <?php if (!empty($payment_method->$image_column)): ?>
                             <img src="<?php echo $payment_method->image_path($image_column); ?>" style="width:100px; margin-bottom:10px" alt="card <?php echo $i ?> image">

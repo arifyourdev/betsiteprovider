@@ -7,10 +7,13 @@ static protected $db_columns = [
     'meta_title', 'meta_description', 'meta_keywords',
     'about_short_title', 'about_title', 'about_description', 'about_image',
     'about_li1', 'about_li2', 'about_li3', 'about_li4',
+    'how_short_title', 'how_title', 'how_description', 'how_image',
+    'how_li1', 'how_li2', 'how_li3',
     'faq_image',
     'faq1_title', 'faq1_description', 'faq2_title', 'faq2_description',
     'faq3_title', 'faq3_description', 'faq4_title', 'faq4_description',
     'faq5_title', 'faq5_description',
+    'newsletter_short_title', 'newsletter_title', 'newsletter_button_name', 'newsletter_image',
 ];
 
 public $id;
@@ -26,6 +29,13 @@ public $about_li1;
 public $about_li2;
 public $about_li3;
 public $about_li4;
+public $how_short_title;
+public $how_title;
+public $how_description;
+public $how_image;
+public $how_li1;
+public $how_li2;
+public $how_li3;
 public $faq_image;
 public $faq1_title;
 public $faq1_description;
@@ -37,9 +47,13 @@ public $faq4_title;
 public $faq4_description;
 public $faq5_title;
 public $faq5_description;
+public $newsletter_short_title;
+public $newsletter_title;
+public $newsletter_button_name;
+public $newsletter_image;
 
 // Column names whose images are shared/common between languages.
-static protected $image_columns = ['about_image', 'faq_image'];
+static protected $image_columns = ['about_image', 'how_image', 'faq_image', 'newsletter_image'];
 
 public $tmp_paths = [];
 public $upload_directory = "images/home";

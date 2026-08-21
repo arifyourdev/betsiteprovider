@@ -24,6 +24,10 @@ $home_products = array_slice(($current_lang == 'bd') ? Product::find_by_bng_lang
 
 // HOME PAGE BLOG - latest 3 blog posts for the current language (shown before the FAQ section).
 $home_blogs = Blog::find_by_recent($home_language);
+
+
+$about_language = (isset($_SESSION['lang']) && $_SESSION['lang'] == 'bd') ? 'Bengali' : 'English';
+$about = About::find_by_language($about_language);
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -116,6 +120,64 @@ $home_blogs = Blog::find_by_recent($home_language);
   </div>
 
 
+  <section class="float-left w-100 position-relative support-con main-box background-navy-light">
+    <figure><img src="assets/images/element10.png" alt="ellipse" class="position-absolute element10"></figure>
+    <figure><img src="assets/images/element7.png" alt="ellipse" class="position-absolute element7"></figure>
+    <figure><img src="assets/images/element9.png" alt="ellipse" class="position-absolute element9"></figure>
+    <figure><img src="assets/images/element3.png" alt="ellipse" class="position-absolute element3"></figure>
+    <div class="container wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInUp;">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="support-img-con">
+            <!-- <figure>
+              <img src="assets/images/plugin-support-img.png" alt="support image">
+              
+            </figure> -->
+             <figure>
+              <img src="<?php echo !empty($home->how_image) ? 'admin/' . str_replace('\\', '/', $home->image_path('how_image')) : 'assets/images/plugin-support-img.png' ?>" alt="how it work image">
+            </figure>
+            <!-- support img con -->
+          </div>
+          <!-- col -->
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="support-content-con">
+            <span class="d-block green-text inter-font font-weight-normal"><i class="fa-solid fa-rocket"></i><?php echo $home->how_short_title ?></span>
+            <div class="heading-title-con mb-0">
+              <h2 class="text-white font-weight-600"><?php echo htmlspecialchars($home->how_title) ?></h2>
+               <?php if (!empty($home->how_description)) { ?>
+                <p class="text-white font-size-16"><?php echo nl2br(htmlspecialchars($home->how_description)) ?></p>
+              <?php } ?>
+              <div>
+                 <ul class="list-unstyled p-0">
+                  <?php foreach ([$home->how_li1, $home->how_li2, $home->how_li3] as $li) {
+                    if (empty($li)) {
+                      continue;
+                    } ?>
+                    <li class="position-relative text-white d-flex g-4">
+                       <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="#69ba2d" d="M22 9V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6v-1h2v-1h2v-1h1v-1h1v-2h1v-2h1V9zm-4 3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6v-2h1v-1h2v1h1v1h2v-1h1v-1h1v-1h1V9h1V8h2v1h1v2h-1z" />
+                      </svg>
+                      </span>
+                       <?php echo htmlspecialchars($li) ?></li>
+                  <?php } ?>
+            </ul>
+                  
+              </div>
+              <!-- heading title con -->
+            </div>
+            <!-- support content con -->
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- support con -->
+  </section>
+
 
 
   <section class="float-left w-100 web-hosting-solutions-con position-relative padding-top padding-bottom main-box background-navy-dark">
@@ -159,6 +221,8 @@ $home_blogs = Blog::find_by_recent($home_language);
     <!-- web hosting solutions con -->
   </section>
 
+ 
+
 
   <!-- HOME PAGE PRODUCTS SECTION -->
   <section class="float-left w-100 position-relative featured-games-con padding-top padding-bottom main-box background-navy-medium">
@@ -197,57 +261,114 @@ $home_blogs = Blog::find_by_recent($home_language);
   </section>
 
 
-    <!-- MAIN SECTION -->
-  <section class="blog-posts blogpage-section three-column-con w-100 float-left background-navy-light" id="three">
-    <div class="container">
-      <div class="row wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-        <div id="blog" class="col-xl-12">
-          <div class="heading-title-con text-center">
-                <span class="special-text green-text d-block"><?php echo $latest_blogs ?> </span>
-            <h2 class="text-white"><?php echo $blog_title ?></h2>
-            <!-- heading title con -->
-          </div>
-          <!--   -->
-          <div class="row">
-             <?php foreach ($home_blogs as $blog) { ?>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="blog-box blog-box1">
-              
-                 <figure class="blog-image mb-0"><img src="admin/<?php echo str_replace('\\', '/', $blog->picture_path()) ?>"
-                  alt="<?php echo !empty($blog->image_alt) ? htmlspecialchars($blog->image_alt) : htmlspecialchars($blog->title) ?>" class="img-fluid">
+  <!-- WHY CHOOSE US SECTION -->
+  <section
+    class="float-left w-100 position-relative why-choose-us-con padding-top padding-bottom main-box background-navy-dark text-center">
+    <div class="container wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+      <div class="heading-title-con text-center">
+        <span class="special-text green-text d-block">Why Choose Us?</span>
+        <h2 class="text-white">Great Gaming Experience Starts <br>
+          With A Reliable Server.</h2>
+        <!-- heading title con -->
+      </div>
+      <!-- carousel -->
+      <div class="owl-carousel">
+        <?php for ($i = 1; $i <= 4; $i++):
+          $card_title = $about->{"card{$i}_title"};
+          $card_desc = $about->{"card{$i}_description"};
+        ?>
+          <div class="item">
+            <div class="white-box">
+              <figure class="text-center"><img src="assets/images/choose-icon<?php echo $i ?>.png" alt="icon" class="img-fluid">
               </figure>
-                <div class="lower-portion">
-                  <div class="span-i-con">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="text-size-14 text-mr">By : <?php echo $blog->name ?></span>
-                     
-                     
-                  </div>
-                  <a href="blog/<?php echo $blog->title_url ?>">
-                    <h5><?php echo htmlspecialchars($blog->title) ?></h5>
-                  </a>
-                </div>
-                <div class="button-portion ">
-                  <div class="date">
-                    <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
-                    <span class="mb-0 text-size-14"><?php echo date('d F Y', strtotime($blog->created_at)) ?></span>
-                  </div>
-                  <div class="button">
-                    <a class="mb-0 read_more text-decoration-none hover-animate"
-                      href="blog/<?php echo $blog->title_url ?>">Read More</a>
-                  </div>
-                </div>
-              </div>
+              <h4><?php echo h($card_title) ?></h4>
+              <p class="text-white mb-0"><?php echo nl2br(h($card_desc)) ?></p>
+              <!-- white box -->
             </div>
-        <?php } ?>
+            <!-- item -->
+          </div>
+        <?php endfor; ?>
+
+        <!-- owl carousel -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- features benefits con -->
+  </section>
+
+  <section
+    class="float-left w-100 position-relative padding-top padding-bottom location-con main-box text-center background-navy-dark">
+    <figure><img src="assets/images/right-shape.png" alt="shape" class="position-absolute right-shape"></figure>
+    <div class="container wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+      <div class="row">
+        <div class="col-12">
+          <div class="location_content text-center" data-aos="fade-up">
+            <div class="heading-title-con mb-0">
+              <span class="special-text green-text d-block">Worldwide Server Locations</span>
+              <h2 class="text-white">Multiple Data Centers For Optimal <br>
+                Game Performance.</h2>
+              <!-- heading title con -->
+            </div>
+            <figure class="locationmap-image mb-0">
+              <img src="./assets/images/locationmap-image.png" alt="image" class="img-fluid">
+            </figure>
           </div>
         </div>
       </div>
     </div>
   </section>
 
- 
- 
+  <!-- MAIN SECTION -->
+  <section class="blog-posts blogpage-section three-column-con w-100 float-left background-navy-light" id="three">
+    <div class="container">
+      <div class="row wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+        <div id="blog" class="col-xl-12">
+          <div class="heading-title-con text-center">
+            <span class="special-text green-text d-block"><?php echo $latest_blogs ?> </span>
+            <h2 class="text-white"><?php echo $blog_title ?></h2>
+            <!-- heading title con -->
+          </div>
+          <!--   -->
+          <div class="row">
+            <?php foreach ($home_blogs as $blog) { ?>
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="blog-box blog-box1">
+
+                  <figure class="blog-image mb-0"><img src="admin/<?php echo str_replace('\\', '/', $blog->picture_path()) ?>"
+                      alt="<?php echo !empty($blog->image_alt) ? htmlspecialchars($blog->image_alt) : htmlspecialchars($blog->title) ?>" class="img-fluid">
+                  </figure>
+                  <div class="lower-portion">
+                    <div class="span-i-con">
+                      <i class="fa-solid fa-user"></i>
+                      <span class="text-size-14 text-mr">By : <?php echo $blog->name ?></span>
+
+
+                    </div>
+                    <a href="blog/<?php echo $blog->title_url ?>">
+                      <h5><?php echo htmlspecialchars($blog->title) ?></h5>
+                    </a>
+                  </div>
+                  <div class="button-portion ">
+                    <div class="date">
+                      <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
+                      <span class="mb-0 text-size-14"><?php echo date('d F Y', strtotime($blog->created_at)) ?></span>
+                    </div>
+                    <div class="button">
+                      <a class="mb-0 read_more text-decoration-none hover-animate"
+                        href="blog/<?php echo $blog->title_url ?>">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <?php
   $faqs = [];
   if ($home) {
@@ -263,7 +384,7 @@ $home_blogs = Blog::find_by_recent($home_language);
   <?php if (!empty($faqs)) { ?>
 
     <!-- QUESTION ANSWERS SECTION -->
-    <section class="float-left w-100 position-relative faq-con padding-top padding-bottom main-box background-navy-light">
+    <section class=" float-left w-100 position-relative faq-con padding-top padding-bottom main-box background-navy-light ">
       <figure><img src="assets/images/ellipse2.png" alt="element" class="position-absolute element"></figure>
       <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
         <div class="row">
@@ -330,9 +451,108 @@ $home_blogs = Blog::find_by_recent($home_language);
       <!-- question answer con -->
     </section>
 
+ 
+<section
+    class="float-left w-100 position-relative customers-reviews-con padding-top padding-bottom main-box text-center background-navy-medium">
+    <figure><img src="assets/images/left-shape.png" alt="shape" class="position-absolute left-shape"></figure>
+    <div class="container wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+      <div class="heading-title-con text-center">
+        <span class="special-text green-text d-block">Gaming Insights & Resources</span>
+        <h2 class="text-white">Tips, Guides, And Updates For <br>
+          Your Gaming Experience. </h2>
+        <!-- heading title con -->
+      </div>
+      <!-- carousel -->
+      <div class="owl-carousel">
+        <div class="item">
+          <div class="white-box">
+            <p>Lorem ipsum dolor sit amet con secter dipiscing elit, sed do eiusmo dtempor dolor idunt ut labore et dol
+              ore magnia ad minim elialiqua.</p>
+            <figure class="text-center"><img src="assets/images/customer-review1.png" alt="icon" class="img-fluid">
+            </figure>
+            <h4>Rizwan Joseph</h4>
+            <span class="d-block inter-font">Co-Founder</span>
+            <!-- white box -->
+          </div>
+          <!-- item -->
+        </div>
+        <div class="item">
+          <div class="white-box">
+            <p>Duis aute irure dolor in reprehen derit in emvoluptate velit esse cillu mdolore eu dolo fugiat nulla
+              pariatu Excepteur sint anim id est.</p>
+            <figure class="text-center"><img src="assets/images/customer-review2.png" alt="icon" class="img-fluid">
+            </figure>
+            <h4>Alexandra Jorden</h4>
+            <span class="d-block inter-font">Cheif Executive</span>
+            <!-- white box -->
+          </div>
+          <!-- item -->
+        </div>
+        <div class="item">
+          <div class="white-box">
+            <p>Lorem ipsum dolor sit amet con secter dipiscing elit, sed do eiusmo dtempor dolor idunt ut labore et dol
+              ore magnia ad minim elialiqua.</p>
+            <figure class="text-center"><img src="assets/images/customer-review3.png" alt="icon" class="img-fluid">
+            </figure>
+            <h4>Anthory Clark</h4>
+            <span class="d-block inter-font">Director</span>
+            <!-- white box -->
+          </div>
+          <!-- item -->
+        </div>
+        <!-- owl carousel -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- customer review con  -->
+  </section>
+
+   <!-- CTA SECTION -->
+
+
+    <section  class="float-left w-100 position-relative cta-con main-box z-index-1 background-navy-medium">
+      <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s" >
+        <!-- <div class="cta-inner-con padding-top100 padding-bottom100"> -->
+          
+          <div class="cta-inner-con padding-top100 padding-bottom100 "<?php if (!empty($home->newsletter_image)) { ?> style="background-image: url('admin/<?php echo str_replace('\\', '/', $home->image_path('newsletter_image')); ?>');"<?php } ?>>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <!-- col -->
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="cta-content-con">
+                <div class="heading-title-con mb-0">
+                  <!-- <span class="special-text green-text d-block">Fast, Secure, and Always Online</span> -->
+                            <?php if (!empty($home->newsletter_short_title)) { ?>
+                    <span class="special-text green-text d-block"><?php echo htmlspecialchars($home->newsletter_short_title) ?></span>
+                  <?php } ?>
+                            <?php if (!empty($home->newsletter_title)) { ?>
+                    <h2 class="text-white"><?php echo htmlspecialchars($home->newsletter_title) ?></h2>
+                  <?php } ?>
+                  <div class="secondary-button d-inline-block">
+                    <a href="contact" class="d-inline-block"><?php echo htmlspecialchars($home->newsletter_button_name) ?>  <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                  </div>
+                  <!-- heading title con -->
+                </div>
+                <!-- cta content con -->
+              </div>
+              <!-- col -->
+            </div>
+            <!-- row -->
+          </div>
+          <!-- cta inner con -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- cta con  -->
+    </section>
+
 
   <?php } ?>
   <!-- CTA SECTION -->
+
+ 
 
   <!-- FOOTER SECTION -->
   <?php include "includes/footer.php" ?>

@@ -1041,7 +1041,7 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    margin-bottom: -200px;
+    margin-bottom: -70px;
 }
 
 .cta-con .cta-content-con .heading-title-con h2 {
@@ -1059,6 +1059,22 @@ span {
 
 .cta-con .cta-content-con {
     padding-right: 20px;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter-con .newsletter-inner-con {
+    background-color: var(--navy--family--color1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 60px 20px;
+    margin-bottom: -70px;
+}
+
+.newsletter-con .newsletter-content-con h2 {
+    font-weight: 600;
+    margin: 15px 0 25px;
 }
 
 /* CUSTOMER REVIEW SECTION */
@@ -1439,7 +1455,10 @@ span {
 
 .support-con .support-img-con figure {
     position: relative;
-    /* left: -260px; */
+    left: -260px;
+}
+.support-img-con.support-img-con2 figure {
+    left: 0;
 }
 
 .support-con .element10 {
@@ -2868,4 +2887,8 @@ span {
 .product-modal .btn-visit-site:hover {
     color: var(--secondary--color);
     opacity: 0.9;
+}
+
+.g-4{
+    gap:10px;
 }

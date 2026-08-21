@@ -111,7 +111,7 @@ $about = About::find_by_language($about_language);
     <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-6">
-          <div class="support-img-con">
+          <div class="support-img-con support-img-con2">
             <figure>
               <img src="<?php echo !empty($about->company_image) ? 'admin/' . h(str_replace('\\', '/', $about->company_image_path())) : 'assets/images/plugin-support-img.png' ?>" alt="about company image">
             </figure>

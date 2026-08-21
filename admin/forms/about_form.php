@@ -35,7 +35,7 @@
             <input type="text" class="form-control" name="about[breadcrumb_title]" value="<?php echo htmlspecialchars($about->breadcrumb_title) ?>">
         </div>
         <div class="col-md-6 mb-3">
-            <label>Image</label>
+            <label>Image <span style="color:red">(1920*400)</span></label>
             <input type="file" class="form-control-file" name="breadcrumb_image">
             <?php if (!empty($about->breadcrumb_image)): ?>
                 <img src="<?php echo $about->breadcrumb_image_path(); ?>" style="width:100px; margin-top:5px" alt="breadcrumb image">
@@ -92,7 +92,7 @@
             <textarea class="form-control" rows="4" name="about[company_description]"><?php echo htmlspecialchars($about->company_description) ?></textarea>
         </div>
         <div class="col-md-6 mb-3">
-            <label>Image</label>
+            <label>Image <span style="color:red">(450*600)</span></label>
             <input type="file" class="form-control-file" name="company_image">
             <?php if (!empty($about->company_image)): ?>
                 <img src="<?php echo $about->company_image_path(); ?>" style="width:100px; margin-top:5px" alt="about company image">

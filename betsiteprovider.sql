@@ -207,6 +207,13 @@ CREATE TABLE `home_page` (
   `about_li2` varchar(255) NOT NULL DEFAULT '',
   `about_li3` varchar(255) NOT NULL DEFAULT '',
   `about_li4` varchar(255) NOT NULL DEFAULT '',
+  `how_short_title` varchar(255) NOT NULL DEFAULT '',
+  `how_title` varchar(255) NOT NULL DEFAULT '',
+  `how_description` text DEFAULT NULL,
+  `how_image` varchar(255) NOT NULL DEFAULT '',
+  `how_li1` varchar(255) NOT NULL DEFAULT '',
+  `how_li2` varchar(255) NOT NULL DEFAULT '',
+  `how_li3` varchar(255) NOT NULL DEFAULT '',
   `faq_image` varchar(255) NOT NULL DEFAULT '',
   `faq1_title` varchar(255) NOT NULL DEFAULT '',
   `faq1_description` text DEFAULT NULL,
@@ -217,7 +224,11 @@ CREATE TABLE `home_page` (
   `faq4_title` varchar(255) NOT NULL DEFAULT '',
   `faq4_description` text DEFAULT NULL,
   `faq5_title` varchar(255) NOT NULL DEFAULT '',
-  `faq5_description` text DEFAULT NULL
+  `faq5_description` text DEFAULT NULL,
+  `newsletter_short_title` varchar(255) NOT NULL DEFAULT '',
+  `newsletter_title` varchar(255) NOT NULL DEFAULT '',
+  `newsletter_button_name` varchar(255) NOT NULL DEFAULT '',
+  `newsletter_image` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

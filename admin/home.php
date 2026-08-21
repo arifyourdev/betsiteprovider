@@ -15,7 +15,7 @@ if (is_post_request()) {
 
     // Images are optional on every save - only touch them (and remove the
     // old file) when a new one was actually uploaded.
-    $image_fields = ['about_image', 'faq_image'];
+    $image_fields = ['about_image', 'faq_image', 'newsletter_image'];
     foreach ($image_fields as $field) {
         if (is_uploaded_file($_FILES[$field]['tmp_name'] ?? '')) {
             $old_path = $home->image_path($field);
